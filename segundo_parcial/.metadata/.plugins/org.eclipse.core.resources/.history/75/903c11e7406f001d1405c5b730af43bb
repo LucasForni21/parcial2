@@ -1,0 +1,9 @@
+package parcial;
+
+public class Encargado {
+	
+	private String nombre;
+	private int id;
+	
+
+}

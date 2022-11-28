@@ -1,0 +1,148 @@
+package parcial;
+
+import java.util.LinkedList;
+
+import javax.swing.JOptionPane;
+
+class Main {
+
+	public static void main(String[] args) {
+		Encargado encargado = new Encargado ("Lucas",0720);
+	
+		/*Venta venta1 = new Venta(1,"",0,0,false);
+		Venta venta2 = new Venta(2,"",0,0,false);
+		Venta venta3 = new Venta(3,"",0,0,false);
+		Venta venta4 = new Venta(4,"",0,0,false);
+		Venta venta5 = new Venta(5,"",0,0,false);
+		Venta venta6 = new Venta(6,"",0,0,false);
+		Venta venta7 = new Venta(7,"",0,0,false);
+		Venta venta8 = new Venta(8,"",0,0,false);
+		Venta venta9 = new Venta(9,"",0,0,false);
+		Venta venta10 = new Venta(10,"",0,0,false); */
+		LinkedList<Venta> ventas_cafe =  new LinkedList <Venta>();
+		Cafe cafe1 = new Cafe("Latte",1.50);
+		Cafe cafe2 = new Cafe("Flat White",2.50);
+		Cafe cafe3 = new Cafe("Lagrima",1.30);
+		Cafe cafe4 = new Cafe("Expresso",1.00);
+		LinkedList <Cafe> cafecito = new LinkedList <Cafe>();
+		cafecito.add(cafe1);
+		cafecito.add(cafe2);
+		cafecito.add(cafe3);
+		cafecito.add(cafe4);
+	
+					
+		int consulta = Integer.parseInt(JOptionPane.showInputDialog("Ingresar que cafe quiere comprar: " + "\n1.Latte $1.50" + "\n2.Flat White $2.50" + "\n3.Lagrima $1.30 " + "\n4.Expresso $1.00 " + "\n0. Para salir " ));
+	while (consulta != 0) {
+		
+	  switch (consulta) {
+	case 1:
+	
+	int cantidad = Integer.parseInt(JOptionPane.showInputDialog("Cantidad: "));
+	double precio = cafe1.getPrecio();
+	
+	String tarjeta = JOptionPane.showInputDialog("풲iene tarjeta?: ");
+	boolean descuento = false;
+	
+	if (tarjeta.equalsIgnoreCase("si")) {
+		 descuento = true;
+		 Double valor = precio * cantidad;
+		 
+		Double oferta = valor  - valor*0.15;
+		Double total = oferta;
+		ventas_cafe.add(new Venta(001,cafe1,cantidad,total,descuento));
+		JOptionPane.showMessageDialog(null, "Detalle de la compra: " + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+
+	} else {
+		descuento = false;
+		double total = precio * cantidad;
+		ventas_cafe.add(new Venta(002,cafe2,cantidad,total,descuento));
+		JOptionPane.showMessageDialog(null, "Detalle de la compra: "   + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+	} 
+	
+	
+	
+		break;
+	case 2:
+		 cantidad = Integer.parseInt(JOptionPane.showInputDialog("Cantidad: "));
+		 precio = cafe2.getPrecio();
+		
+		 tarjeta = JOptionPane.showInputDialog("풲iene tarjeta?: ");
+		 descuento = false;
+		
+		if (tarjeta.equalsIgnoreCase("si")) {
+			 descuento = true;
+			 Double valor = precio * cantidad;
+			 
+			Double oferta = valor  - valor*0.15;
+			Double total = oferta;
+			ventas_cafe.add(new Venta(001,cafe1,cantidad,total,descuento));
+			JOptionPane.showMessageDialog(null, "Detalle de la compra: " + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+
+		} else {
+			descuento = false;
+			double total = precio * cantidad;
+			ventas_cafe.add(new Venta(002,cafe2,cantidad,total,descuento));
+			JOptionPane.showMessageDialog(null, "Detalle de la compra: "   + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+		} 
+		break;
+	case 3:
+		 cantidad = Integer.parseInt(JOptionPane.showInputDialog("Cantidad: "));
+		 precio = cafe3.getPrecio();
+		
+		 tarjeta = JOptionPane.showInputDialog("풲iene tarjeta?: ");
+		 descuento = false;
+		
+		if (tarjeta.equalsIgnoreCase("si")) {
+			 descuento = true;
+			 Double valor = precio * cantidad;
+			 
+			Double oferta = valor  - valor*0.15;
+			Double total = oferta;
+			ventas_cafe.add(new Venta(001,cafe1,cantidad,total,descuento));
+			JOptionPane.showMessageDialog(null, "Detalle de la compra: " + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+
+		} else {
+			descuento = false;
+			double total = precio * cantidad;
+			ventas_cafe.add(new Venta(002,cafe2,cantidad,total,descuento));
+			JOptionPane.showMessageDialog(null, "Detalle de la compra: "   + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+		}
+		break;
+	case 4:
+		 cantidad = Integer.parseInt(JOptionPane.showInputDialog("Cantidad: "));
+		 precio = cafe4.getPrecio();
+		
+		 tarjeta = JOptionPane.showInputDialog("풲iene tarjeta?: ");
+		 descuento = false;
+		
+		if (tarjeta.equalsIgnoreCase("si")) {
+			 descuento = true;
+			 Double valor = precio * cantidad;
+			 
+			Double oferta = valor  - valor*0.15;
+			Double total = oferta;
+			ventas_cafe.add(new Venta(001,cafe1,cantidad,total,descuento));
+			JOptionPane.showMessageDialog(null, "Detalle de la compra: " + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+
+		} else {
+			descuento = false;
+			double total = precio * cantidad;
+			ventas_cafe.add(new Venta(002,cafe2,cantidad,total,descuento));
+			JOptionPane.showMessageDialog(null, "Detalle de la compra: "   + "\nCantidad: " + cantidad + "\nPrecio Total: " + total );
+		}
+		break;
+	
+	 }
+	consulta = Integer.parseInt(JOptionPane.showInputDialog("Ingresar que cafe quiere comprar: " + "\n1.Latte $1.50" + "\n2.Flat White $2.50" + "\n3.Lagrima $1.30 " + "\n4.Expresso $1.00 " + "\n0. Para salir " ));
+
+	}
+		
+	
+ 	// String fin = JOptionPane.showMessageDialog(null, "Dia Finalizado");
+	
+	System.out.println("Dia finalizado");
+	
+	  }	
+	}
+
+

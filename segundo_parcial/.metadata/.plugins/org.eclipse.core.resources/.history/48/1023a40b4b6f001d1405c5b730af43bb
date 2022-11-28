@@ -1,0 +1,15 @@
+package parcial;
+
+public class Cafe {
+	
+	private String tipo;
+	private String precio;
+
+    
+
+    
+    
+	
+    
+    
+}

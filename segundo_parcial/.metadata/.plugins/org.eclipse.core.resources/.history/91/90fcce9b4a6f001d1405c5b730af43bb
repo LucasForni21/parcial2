@@ -1,0 +1,54 @@
+package parcial;
+
+public class Cafe {
+	
+	private double latte;
+	private double flat_whitte;
+    private double lagrima;
+    private double Expresso;
+    
+    
+	public double getLatte() {
+		return latte;
+	}
+	public void setLatte(double latte) {
+		this.latte = latte;
+	}
+	public double getFlat_whitte() {
+		return flat_whitte;
+	}
+	public void setFlat_whitte(double flat_whitte) {
+		this.flat_whitte = flat_whitte;
+	}
+	public double getLagrima() {
+		return lagrima;
+	}
+	public void setLagrima(double lagrima) {
+		this.lagrima = lagrima;
+	}
+	public double getExpresso() {
+		return Expresso;
+	}
+	public void setExpresso(double expresso) {
+		Expresso = expresso;
+	}
+	
+	public Cafe(double latte, double flat_whitte, double lagrima, double expresso) {
+		super();
+		this.latte = latte;
+		this.flat_whitte = flat_whitte;
+		this.lagrima = lagrima;
+		Expresso = expresso;
+	}
+	@Override
+	public String toString() {
+		return "Cafe [latte=" + latte + ", flat_whitte=" + flat_whitte + ", lagrima=" + lagrima + ", Expresso="
+				+ Expresso + "]";
+	}
+	
+	
+	
+	
+    
+    
+}

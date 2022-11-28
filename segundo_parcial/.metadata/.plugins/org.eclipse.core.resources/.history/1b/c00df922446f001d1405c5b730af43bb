@@ -1,0 +1,47 @@
+package parcial;
+
+import java.util.LinkedList;
+
+import javax.swing.JOptionPane;
+
+class Main {
+
+	public static void main(String[] args) {
+		Encargado encargado = new Encargado ("Lucas",0720);
+		Venta venta1 = new Venta(1,"",0,0,false);
+		Venta venta2 = new Venta(2,"",0,0,false);
+		Venta venta3 = new Venta(3,"",0,0,false);
+		Venta venta4 = new Venta(4,"",0,0,false);
+		Venta venta5 = new Venta(5,"",0,0,false);
+		Venta venta6 = new Venta(6,"",0,0,false);
+		Venta venta7 = new Venta(7,"",0,0,false);
+		Venta venta8 = new Venta(8,"",0,0,false);
+		Venta venta9 = new Venta(9,"",0,0,false);
+		Venta venta10 = new Venta(10,"",0,0,false);
+		LinkedList<Venta> ventas_cafe =  new LinkedList <Venta>();
+		
+		for (int i = 0; i < venta1.lenght; i++) {
+			
+	int consulta = Integer.parseInt(JOptionPane.showInputDialog("Ingresar que cafe quiere comprar: " + "\n1.Latte $1.50" + "\n2.Flat White $2.50" + "\n3.Lagrima $1.30 " + "\n4.Expresso $1.00 "));
+		
+	  switch (consulta) {
+	case 1:
+		
+		break;
+	case 2:
+		break;
+	case 3: 
+		break;
+	case 4:
+		break;
+
+	default:
+		break;
+	}
+		}
+		
+		
+		
+	}
+
+}

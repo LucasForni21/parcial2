@@ -1,0 +1,32 @@
+package parcial;
+
+import javax.swing.JOptionPane;
+
+class Main {
+
+	public static void main(String[] args) {
+		
+		
+		//LinkedList<ventas> ventas_cafe =  new LinkedList <ventas>();
+	int consulta = Integer.parseInt(JOptionPane.showInputDialog("Ingresar que cafe quiere comprar: " + "\n1.Latte $1.50" + "\n2.Flat White $2.50" + "\n3.Lagrima $1.30 " + "\n4.Expresso $1.00 "));
+		
+	  switch (consulta) {
+	case 1:
+		
+		break;
+	case 2:
+		break;
+	case 3: 
+		break;
+	case 4:
+		break;
+
+	default:
+		break;
+	}
+		
+		
+		
+	}
+
+}

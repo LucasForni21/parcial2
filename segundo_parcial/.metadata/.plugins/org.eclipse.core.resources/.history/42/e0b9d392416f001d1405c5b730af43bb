@@ -1,0 +1,16 @@
+package parcial;
+
+class Main {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+    //LinkedList<ventas> ventas_cafe =  new LinkedList <ventas>();
+		
+	}
+
+}
